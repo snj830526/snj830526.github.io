@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image', title, description, ...(origin ? { images: [`${origin}/og.png`] } : {}) },
 };
 const product = { '@context': 'https://schema.org', '@type': 'SoftwareApplication', name: 'Hey Terminal', operatingSystem: 'iPadOS 17.6 or later, iOS 17.6 or later', applicationCategory: 'DeveloperApplication', description, downloadUrl: 'https://apps.apple.com/app/id6761189074', ...(origin ? { url: origin, image: `${origin}/icon.png` } : {}) };
+const video = { '@context': 'https://schema.org', '@type': 'VideoObject', name: 'SSH Terminal for iPad with Keyboard Shortcuts | Hey Terminal', description: 'A 28-second iPad Simulator demo of connecting over SSH, running shell commands, opening a tab with Command-T, and returning to the remote session.', thumbnailUrl: origin ? [`${origin}/poster.png`] : [], uploadDate: '2026-09-11', duration: 'PT28S', contentUrl: origin ? `${origin}/demo.mp4` : undefined, embedUrl: 'https://www.youtube.com/embed/I_BQFuH5sec' };
 export default function RootLayout({children}: Readonly<{children: React.ReactNode}>) {
-  return <html lang="en"><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(product).replace(/</g,'\\u003c')}} />{children}</body></html>;
+  return <html lang="en"><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(product).replace(/</g,'\\u003c')}} /><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(video).replace(/</g,'\\u003c')}} />{children}</body></html>;
 }

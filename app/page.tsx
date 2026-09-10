@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
 const store = 'https://apps.apple.com/app/id6761189074';
+const youtube = 'https://youtu.be/I_BQFuH5sec';
 const support = 'https://snj830526.notion.site/Hey-Terminal-Usage-Guide-347d56dd6cc680aa9e48e0d1975fd583';
 const privacy = 'https://snj830526.notion.site/Privacy-Policy-for-Hey-Terminal-32fd56dd6cc6801d8639e3262f34c123';
 
@@ -33,7 +34,7 @@ export default function Home() {
       <section id="demo" className="demo-section wrap">
         <div className="demo-heading"><div><p className="eyebrow">From prompt to session</p><h2>A few commands.<br />A little more done.</h2></div><p>SSH connection, real shell commands,<br />and a new tab with Command-T.</p></div>
         <figure className="demo-frame"><video controls playsInline preload="none" poster="/poster.png" width="1920" height="1440" aria-label="Hey Terminal: a 28-second iPad SSH demonstration"><source src="/demo.mp4" type="video/mp4" /><track kind="captions" src="/demo.vtt" srcLang="en" label="English" />Your browser does not support this video. Read the walkthrough below.</video></figure>
-        <p className="demo-caption">Recorded in iPad Simulator with keyboard input and an isolated SSH demo server. No production data. Silent video.</p>
+        <p className="demo-caption">Recorded in iPad Simulator with keyboard input and an isolated SSH demo server. No production data. Silent video. <a className="text-link" href={youtube}>Watch on YouTube ↗</a></p>
         <details className="demo-transcript"><summary>Read the video walkthrough</summary><p>Start at the local prompt. Type <code>ssh demo</code> to connect to a configured SSH alias. Run <code>ls</code> and <code>cat status.txt</code> on the demo server. Press Command-T to open a local tab, run <code>ls</code>, then select the existing SSH tab to return to its output.</p></details>
       </section>
       <section className="details wrap" aria-labelledby="details-heading">
