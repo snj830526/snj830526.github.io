@@ -7,9 +7,9 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "vinext build",
+    "build": "vinext build && node scripts/prepare-export.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "lint": "oxlint app vite.config.ts next.config.ts",
+    "lint": "oxlint app scripts vite.config.ts next.config.ts",
     "format": "oxfmt"
   },
   "dependencies": {

@@ -1,3 +1,4 @@
+/* oxlint-disable next/no-html-link-for-pages -- Static GitHub Pages uses document navigation to directory indexes. */
 import Image from 'next/image';
 
 const store = 'https://apps.apple.com/app/id6761189074';
@@ -10,7 +11,7 @@ export default function Home() {
     <a className="skip-link" href="#main">Skip to content</a>
     <header className="masthead wrap">
       <a className="brand" href="#main" aria-label="Hey Terminal home"><Image src="/icon.png" width={40} height={40} alt="" /><span>Hey Terminal</span></a>
-      <nav aria-label="Main navigation"><a href="#workflow">The workflow</a><a href={support}>Support ↗</a></nav>
+      <nav aria-label="Main navigation"><a href="#workflow">The workflow</a><a href="/codex/">Codex guide</a><a href={support}>Support ↗</a></nav>
     </header>
     <main id="main">
       <section className="hero wrap">
@@ -22,6 +23,10 @@ export default function Home() {
           <p className="compatibility">For iPad and iPhone · iOS 17.6 or later</p>
         </div>
         <figure className="hero-screen"><Image src="/screen.png" width={2752} height={2064} alt="Hey Terminal running ls and cat in a real SSH demo session, with a second local tab" priority /><figcaption><span className="status-dot" /> Real app capture · iPad Simulator</figcaption></figure>
+      </section>
+      <section className="codex-callout wrap" aria-labelledby="codex-callout-heading">
+        <div><p className="eyebrow">Codex CLI over SSH</p><h2 id="codex-callout-heading">Your computer does the work.<br />Your iPad brings the keyboard.</h2><p>Connect to your Mac or Linux computer, open your project, and use Codex CLI from Hey Terminal. Follow the guide from setup to reviewing a small change.</p></div>
+        <a className="guide-link" href="/codex/"><span>Use Codex from iPad</span><span aria-hidden="true">↗</span><small>Setup · SSH · prompts · review</small></a>
       </section>
       <section id="workflow" className="workflow wrap">
         <div className="section-heading"><p className="eyebrow">Keep your hands on the keys</p><h2>Your commands.<br />Your familiar rhythm.</h2></div>
@@ -44,6 +49,6 @@ export default function Home() {
       <section className="privacy-section wrap" aria-labelledby="privacy-heading"><h2 id="privacy-heading">Know what stays.<br />Know what’s measured.</h2><div><p>SSH configuration and keys are stored in the app’s local files. The app remembers a server’s key on the first connection and rejects a changed key on later connections.</p><p>Hey Terminal uses Firebase Analytics for usage and connection events. Its custom events record command categories and connection outcomes—not full commands, server addresses, passwords, or key contents. The app can also retrieve a startup message from Google Drive.</p><a className="text-link" href={privacy}>Read the privacy policy ↗</a></div></section>
       <section className="closing wrap"><p className="eyebrow">Hey Terminal</p><h2>Bring your keyboard.<br />Find your prompt.</h2><a className="store-button" href={store}>Download on the App Store <span aria-hidden="true">↗</span></a></section>
     </main>
-    <footer className="wrap"><span>© {new Date().getFullYear()} Hey Terminal</span><div><a href={support}>Support</a><a href={privacy}>Privacy policy</a><a href={store}>App Store ↗</a></div></footer>
+    <footer className="wrap"><span>© {new Date().getFullYear()} Hey Terminal</span><div><a href="/codex/">Codex guide</a><a href={support}>Support</a><a href={privacy}>Privacy policy</a><a href={store}>App Store ↗</a></div></footer>
   </>;
 }

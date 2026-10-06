@@ -1,0 +1,19 @@
+WEBVTT
+
+00:00.000 --> 00:03.000
+Hey Terminal is already connected to a temporary SSH host on a Mac.
+
+00:03.000 --> 00:05.000
+Codex CLI opens on the SSH host.
+
+00:05.000 --> 00:09.000
+The request is typed: “Summarize this demo workspace in one sentence.”
+
+00:09.000 --> 00:19.000
+Codex lists and reads the demo workspace files.
+
+00:19.000 --> 00:23.000
+Codex returns a one-sentence summary. No files are edited.
+
+00:23.000 --> 00:26.000
+The summary remains visible in Hey Terminal. This is a read-only demo.
