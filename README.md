@@ -77,7 +77,8 @@ captions/walkthrough. `og.png`: typography-only AI-generated social graphic,
 not app footage. `icon.png`: a copy of the existing app icon.
 
 `codex-demo.mp4` and `codex-poster.png`: approved copies of the October 4
-iPad remote-workflow master and its 24-second poster. The 26-second clip was
+iPad remote-workflow master (2064×2752, 1,211,686 bytes) and its 24-second poster
+(1200×1600). Both use a 3:4 aspect ratio. The 26-second clip was
 recorded in iPad Simulator using a temporary Mac SSH environment; it shows a
 real read-only Codex workspace summary, not edits, tests, or deployment.
 `codex-demo.vtt` supplies English descriptions, with a text walkthrough on the
